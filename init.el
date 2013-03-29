@@ -57,3 +57,6 @@
 
 ;; Emacs is fast for OSX again!
 (setq font-lock-verbose nil)
+
+;; now, make it pretty.
+(load "config/cosmetics")
