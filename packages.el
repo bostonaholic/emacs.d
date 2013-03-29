@@ -8,8 +8,8 @@
 (package-initialize)
 
 ;; TODO: maybe don't need this
-;; (when (not package-archive-contents)
-;;   (package-refresh-contents))
+(when (not package-archive-contents)
+  (package-refresh-contents))
 
 (defvar msb/packages
   '(auto-complete
@@ -54,17 +54,6 @@
     yasnippet)
   "A list of packages to ensure are installed at launch.")
 
-(defun package-not-installed-p (pkg)
-  (not (package-installed-p pkg)))
-
-(defun packages-installed-p ()
-  (loop for pkg in msb/packages
-        when (package-not-installed-p pkg) do (return nil)
-        finally (return t)))
-
-(unless (packages-installed-p)
-  (message "%s" "Refreshing package database...")
-  (package-refresh-contents)
-  (dolist (pkg msb/packages)
-    (when (package-not-installed-p pkg)
-      (package-install pkg))))
+(dolist (pkg msb/packages)
+  (when (not (package-installed-p pkg))
+    (package-install pkg)))
