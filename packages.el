@@ -19,7 +19,6 @@
     coffee-mode
     cperl-mode
     deft
-    dired
     feature-mode
     flymake
     flymake-cursor
