@@ -16,6 +16,7 @@
 
 ;; custom configurations
 (load-file "config/ack")
+(load-file "config/aspell")
 (load-file "config/flymake")
 (load-file "config/pivotal")
 
