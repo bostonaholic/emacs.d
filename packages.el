@@ -36,6 +36,7 @@
     nrepl
     pivotal-tracker
     prolog
+    rainbow-mode
     ruby-mode
     sass-mode
     scss-mode
