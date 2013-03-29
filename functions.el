@@ -64,3 +64,11 @@ Position the cursor at its beginning, according to the current mode."
 (defun msb/light ()
   (interactive)
   (load-theme 'solarized-light))
+
+(defun msb/pink ()
+  (interactive)
+  (load-theme 'phoenix-dark-pink))
+
+(defun msb/mono ()
+  (interactive)
+  (load-theme 'phoenix-dark-mono))

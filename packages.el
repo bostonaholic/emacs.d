@@ -34,6 +34,8 @@
     midnight
     mustache-mode
     nrepl
+    phoenix-dark-pink-theme
+    phoenix-dark-mono-theme
     pivotal-tracker
     prolog
     rainbow-mode
