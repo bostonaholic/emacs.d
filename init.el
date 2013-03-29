@@ -8,18 +8,16 @@
 (setq user-full-name "Matthew Boston")
 (setq user-mail-address "me@matthewboston.com")
 
-;; load my custom functions first
-(load-file "msb/functions")
-
 ;; my super-special configurations
-(load-file "msb/packages")
-(load-file "msb/hooks")
-(load-file "msb/bindings")
+(load-file "packages")
+(load-file "functions")
+(load-file "hooks")
+(load-file "bindings")
 
 ;; custom configurations
-(load-file "config-ack")
-(load-file "config-flymake")
-(load-file "config-pivotal")
+(load-file "config/ack")
+(load-file "config/flymake")
+(load-file "config/pivotal")
 
 ;; let emacs find homebrews
 (push "/usr/local/bin" exec-path)
