@@ -34,6 +34,7 @@
 (load "extends/dired-mode")
 (load "extends/prolog-mode")
 (load "extends/ruby-mode")
+(load "extends/scss-mode")
 (load "extends/window-number-mode")
 
 ;; let emacs find homebrews
