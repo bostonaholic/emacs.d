@@ -31,6 +31,10 @@
 ;; let emacs find homebrews
 (push "/usr/local/bin" exec-path)
 
+;; Save file backups in a temporary directory.
+(setq backup-directory-alist `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
+
 ;; All files should end in a newline.
 (setq require-final-newline t)
 
