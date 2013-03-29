@@ -6,4 +6,4 @@ Matthew Boston's Emacs 24 config
 
 `$ git clone git@github.com:bostonaholic/emacs.d.git`
 
-2. Symlink the repo into your home directory `$ ln -s ~/.emacs.d /path/to/repo`
+2. Symlink the repo into your home directory `$ ln -s /path/to/repo ~/.emacs.d`
