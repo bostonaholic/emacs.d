@@ -32,8 +32,6 @@
     (move-to-column col)))
 (global-set-key (kbd "C-S-<down>") 'msb/move-line-down)
 
-;; TODO: open-line-above, open-line-below
-
 ;; compile user init file to descrease load time
 (defun msb/compiled-user-init-file ()
   (concat (substring user-init-file 0 (- (length user-init-file) 3)) ".elc"))
