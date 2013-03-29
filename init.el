@@ -17,6 +17,7 @@
 (load-file "msb/bindings")
 
 ;; custom configurations
+(load-file "config-ack")
 (load-file "config-flymake")
 (load-file "config-pivotal")
 
