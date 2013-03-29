@@ -18,6 +18,7 @@
 (load-file "config/ack")
 (load-file "config/aspell")
 (load-file "config/autocomplete")
+(load-file "config/deft")
 (load-file "config/flymake")
 (load-file "config/pivotal")
 
