@@ -28,6 +28,9 @@
 (load "config/kibit")
 (load "config/pivotal")
 
+;; extend modes
+(load "extends/window-number-mode")
+
 ;; let emacs find homebrews
 (push "/usr/local/bin" exec-path)
 
