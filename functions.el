@@ -1,5 +1,10 @@
 (defun disapproval () (interactive) (insert "ಠ_ಠ"))
 
+(defun msb/file-string (file)
+  "Read the contents of a file and return as a string."
+  (with-current-buffer (find-file-noselect file)
+    (buffer-string)))
+
 (defun msb/edit-config ()
   (interactive)
   (find-file "~/.emacs.d/init.el"))
