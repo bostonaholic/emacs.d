@@ -21,6 +21,7 @@
 (load-file "config/deft")
 (load-file "config/erc")
 (load-file "config/flymake")
+(load-file "config/kibit")
 (load-file "config/pivotal")
 
 ;; let emacs find homebrews
