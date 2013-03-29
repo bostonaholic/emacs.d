@@ -17,6 +17,7 @@
     clojure-mode
     clojure-test-mode
     coffee-mode
+    cperl-mode
     deft
     dired
     feature-mode
