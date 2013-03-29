@@ -27,6 +27,7 @@
 (load "config/ispell")
 (load "config/kibit")
 (load "config/pivotal")
+(load "config/yasnippet")
 
 ;; extend modes
 (load "extends/clojure-mode")
