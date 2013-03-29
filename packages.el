@@ -40,6 +40,7 @@
     ruby-mode
     sass-mode
     scss-mode
+    slamhound
     slim-mode
     slime
     slime-repl
