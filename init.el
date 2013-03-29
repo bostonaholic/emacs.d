@@ -29,6 +29,7 @@
 (load "config/pivotal")
 
 ;; extend modes
+(load "extends/clojure-mode")
 (load "extends/window-number-mode")
 
 ;; let emacs find homebrews
