@@ -8,21 +8,25 @@
 (setq user-full-name "Matthew Boston")
 (setq user-mail-address "me@matthewboston.com")
 
+;; Configuration root
+(setq config-dir (file-name-directory (or (buffer-file-name) load-file-name)))
+(add-to-list 'load-path config-dir)
+
 ;; my super-special configurations
-(load-file "packages")
-(load-file "functions")
-(load-file "hooks")
-(load-file "bindings")
+(load "packages")
+(load "functions")
+(load "hooks")
+(load "bindings")
 
 ;; custom configurations
-(load-file "config/ack")
-(load-file "config/aspell")
-(load-file "config/autocomplete")
-(load-file "config/deft")
-(load-file "config/erc")
-(load-file "config/flymake")
-(load-file "config/kibit")
-(load-file "config/pivotal")
+(load "config/ack")
+(load "config/aspell")
+(load "config/autocomplete")
+(load "config/deft")
+(load "config/erc")
+(load "config/flymake")
+(load "config/kibit")
+(load "config/pivotal")
 
 ;; let emacs find homebrews
 (push "/usr/local/bin" exec-path)
