@@ -18,6 +18,7 @@
     clojure-test-mode
     coffee-mode
     deft
+    dired
     feature-mode
     flymake
     flymake-cursor
