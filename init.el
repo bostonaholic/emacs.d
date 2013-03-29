@@ -16,6 +16,9 @@
 (load-file "msb/hooks")
 (load-file "msb/bindings")
 
+;; custom configurations
+(load-file "config-flymake")
+
 ;; let emacs find homebrews
 (push "/usr/local/bin" exec-path)
 
