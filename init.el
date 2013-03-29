@@ -18,6 +18,7 @@
 
 ;; custom configurations
 (load-file "config-flymake")
+(load-file "config-pivotal")
 
 ;; let emacs find homebrews
 (push "/usr/local/bin" exec-path)
