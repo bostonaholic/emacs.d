@@ -67,8 +67,8 @@ Position the cursor at its beginning, according to the current mode."
 
 (defun msb/pink ()
   (interactive)
-  (load-theme 'phoenix-dark-pink))
+  (load-theme 'phoenix-dark-pink t))
 
 (defun msb/mono ()
   (interactive)
-  (load-theme 'phoenix-dark-mono))
+  (load-theme 'phoenix-dark-mono t))
