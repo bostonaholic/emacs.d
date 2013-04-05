@@ -3,3 +3,4 @@
 ;; the mode-line.
 (autoload 'window-number-meta-mode "window-number" t)
 (window-number-meta-mode 1)
+(window-number-mode t)
