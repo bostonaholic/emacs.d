@@ -32,4 +32,4 @@
   ;; Make the window title reflect the current buffer.
   (setq frame-title-format (concat "%b - emacs@" system-name))
   ;; load theme of choice
-  (load-theme 'phoenix-dark-pink t))
+  (msb/dark))
