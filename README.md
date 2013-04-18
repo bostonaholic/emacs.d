@@ -16,7 +16,7 @@ Leiningen for Clojure development
 
 enable flymake for JavaScript
 
-`$ brew install jslint`
+`$ brew install jsl`
 
 enable flymake for CoffeeScript
 
