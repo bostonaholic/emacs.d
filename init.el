@@ -1,7 +1,8 @@
 ;;; init.el --- Where all the magic begins
 
-;; Work around a bug on OS X where system-name is FQDN
+;; OS X workarounds
 (when (eq system-type 'darwin)
+  ;; Work around a bug on OS X where system-name is FQDN
   (setq system-name (car (split-string system-name "\\."))))
 
 ;; this is me
