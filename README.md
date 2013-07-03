@@ -12,6 +12,8 @@ Matthew Boston's Emacs 24 config
 
 Leiningen for Clojure development
 
+first install a JDK
+
 `$ brew install leiningen`
 
 enable flymake for JavaScript
