@@ -15,6 +15,7 @@
 
 ;; Show what text is selected.
 (transient-mark-mode t)
+
 ;; And delete selected text if we type over it.
 (delete-selection-mode t)
 
