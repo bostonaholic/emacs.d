@@ -69,6 +69,10 @@ Position the cursor at its beginning, according to the current mode."
   (interactive)
   (load-theme 'phoenix-dark-pink t))
 
+;; (defun msb/mono ()
+;;   (interactive)
+;;   (load-theme 'phoenix-dark-mono t))
+
 (defun msb/mono ()
   (interactive)
-  (load-theme 'phoenix-dark-mono t))
+  (load-theme 'monokai t))

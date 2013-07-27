@@ -33,6 +33,7 @@
     markdown-mode
     midnight
     mustache-mode
+    monokai-theme
     nrepl
     phoenix-dark-pink-theme
     phoenix-dark-mono-theme
