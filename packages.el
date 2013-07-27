@@ -27,6 +27,7 @@
     flymake-ruby
     flymake-sass
     full-ack
+    groovy-mode
     haml-mode
     handlebars-mode
     htmlize
@@ -42,6 +43,7 @@
     rainbow-mode
     ruby-mode
     sass-mode
+    scala-mode2
     scss-mode
     slamhound
     slim-mode
