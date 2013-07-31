@@ -14,6 +14,10 @@ This works best with Emacs 24. You can install via
 
 2. Symlink the repo into your home directory `$ ln -s /path/to/repo ~/.emacs.d`
 
+3. Enable the option key to be `meta`.
+
+For Terminal.app, starting from Snow Leopard: Go to Preferences > Settings > Keyboard > Use option as meta key.
+
 ## External Packages
 
 Leiningen for Clojure development
