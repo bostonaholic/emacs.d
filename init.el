@@ -7,7 +7,7 @@
 
 ;; this is me
 (setq user-full-name "Matthew Boston")
-(setq user-mail-address "me@matthewboston.com")
+(setq user-mail-address "matthew.boston@gmail.com")
 
 ;; Configuration root
 (setq config-dir (file-name-directory (or (buffer-file-name) load-file-name)))
