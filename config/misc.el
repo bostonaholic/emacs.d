@@ -2,8 +2,13 @@
 (push "/usr/local/bin" exec-path)
 
 ;; Save file backups in a temporary directory.
-(setq backup-directory-alist `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+;; do not autosave
+(setq auto-save-default nil)
 
 ;; All files should end in a newline.
 (setq require-final-newline t)
