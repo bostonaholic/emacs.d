@@ -19,9 +19,6 @@
 ;; And delete selected text if we type over it.
 (delete-selection-mode t)
 
-;; Highlight the current line.
-(global-hl-line-mode t)
-
 ;; turn on line numbers.
 (global-linum-mode t)
 
