@@ -33,3 +33,7 @@ enable flymake for JavaScript
 enable flymake for CoffeeScript
 
 `$ npm install -g coffee-script`
+
+enable aspell for spell check
+
+`$ brew install aspell --lang=en`
