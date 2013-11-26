@@ -1,11 +1,8 @@
 (require 'package)
 
-(add-to-list 'package-archives
-             '("gnu" . "http://elpa.gnu.org/packages/") t)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -13,13 +10,13 @@
 
 (defvar msb/packages
   '(auto-complete
-    buffer-move
+    buffer-move ; move buffers with ease
     clojure-mode
     clojure-test-mode
     coffee-mode
     cperl-mode
-    deft
-    feature-mode
+    deft ; notes
+    feature-mode ; cukes
     flymake
     flymake-cursor
     flymake-haml
@@ -27,23 +24,17 @@
     flymake-ruby
     flymake-sass
     full-ack
-    groovy-mode
     haml-mode
     handlebars-mode
-    htmlize
     markdown-mode
-    midnight
+    midnight ; run actions at midnight
     mustache-mode
     monokai-theme
     nrepl
-    phoenix-dark-pink-theme
-    phoenix-dark-mono-theme
     pivotal-tracker
     prolog
-    rainbow-mode
     ruby-mode
     sass-mode
-    scala-mode2
     scss-mode
     slamhound
     slim-mode

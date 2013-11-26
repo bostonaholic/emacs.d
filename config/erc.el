@@ -1,4 +1,4 @@
-(defun erc-start ()
+(defun msb/erc-start ()
   (interactive)
   (erc :server "irc.freenode.net" :port 6667 :nick "bostonaholic"))
 
@@ -10,4 +10,4 @@
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
 
 ;; autoconnect to freenode
-;; (erc :server "irc.freenode.net" :port 6667 :nick "bostonaholic")
+;; (msb/erc-start)

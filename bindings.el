@@ -48,7 +48,7 @@
 ;; control theme dark/light
 (global-set-key (kbd "C-c C-t d") 'msb/dark)
 (global-set-key (kbd "C-c C-t l") 'msb/light)
-(global-set-key (kbd "C-c C-t p") 'msb/pink)
 (global-set-key (kbd "C-c C-t m") 'msb/mono)
 
+;; start deft-mode
 (global-set-key (kbd "C-c d") 'deft)

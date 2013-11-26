@@ -1,4 +1,5 @@
 (require 'dired)
+
 (defun msb/dired-back-to-top ()
   (interactive)
   (beginning-of-buffer)

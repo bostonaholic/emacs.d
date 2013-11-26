@@ -65,10 +65,6 @@ Position the cursor at its beginning, according to the current mode."
   (interactive)
   (load-theme 'solarized-light t))
 
-(defun msb/pink ()
-  (interactive)
-  (load-theme 'phoenix-dark-pink t))
-
 (defun msb/mono ()
   (interactive)
   (load-theme 'monokai t))
