@@ -21,11 +21,13 @@
     flymake-cursor
     flymake-haml
     flymake-jslint
+    flymake-less
     flymake-ruby
     flymake-sass
     full-ack
     haml-mode
     handlebars-mode
+    less-css-mode
     markdown-mode
     midnight ; run actions at midnight
     mustache-mode
