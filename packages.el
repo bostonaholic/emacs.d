@@ -9,7 +9,9 @@
   (package-refresh-contents))
 
 (defvar msb/packages
-  '(auto-complete
+  '(ac-slime
+    auto-complete
+    ag
     buffer-move ; move buffers with ease
     clojure-mode
     clojure-test-mode
@@ -27,12 +29,15 @@
     full-ack
     haml-mode
     handlebars-mode
+    ido-ubiquitous
     less-css-mode
+    magit
     markdown-mode
     midnight ; run actions at midnight
-    mustache-mode
     monokai-theme
+    mustache-mode
     nrepl
+    paredit
     pivotal-tracker
     prolog
     ruby-mode
@@ -42,7 +47,7 @@
     slim-mode
     slime
     slime-repl
-    ac-slime
+    smex ; ido-mode for M-x commands
     solarized-theme
     starter-kit
     starter-kit-bindings
