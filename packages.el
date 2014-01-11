@@ -10,11 +10,13 @@
 
 (defvar msb/packages
   '(ac-slime
+    ac-nrepl
     auto-complete
     ag
     buffer-move ; move buffers with ease
     clojure-mode
     clojure-test-mode
+    clojurescript-mode
     coffee-mode
     cperl-mode
     deft ; notes
