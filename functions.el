@@ -20,7 +20,7 @@
       (forward-line)
       (transpose-lines -1))
     (move-to-column col)))
-(global-set-key (kbd "C-S-<up>") 'msb/move-line-up)
+;; (global-set-key (kbd "C-S-<up>") 'msb/move-line-up)
 
 (defun msb/move-line-down ()
   (interactive)
@@ -30,7 +30,7 @@
       (transpose-lines 1))
     (forward-line)
     (move-to-column col)))
-(global-set-key (kbd "C-S-<down>") 'msb/move-line-down)
+;; (global-set-key (kbd "C-S-<down>") 'msb/move-line-down)
 
 ;; compile user init file to descrease load time
 (defun msb/compiled-user-init-file ()
