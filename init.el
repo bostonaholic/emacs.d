@@ -39,7 +39,6 @@
 (load "extends/ruby-mode")
 (load "extends/scss-mode")
 (load "extends/sh-mode")
-(load "extends/markdown-mode")
 (load "extends/window-number-mode")
 
 ;; miscellaneous configurations
