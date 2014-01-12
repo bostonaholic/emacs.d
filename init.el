@@ -5,10 +5,6 @@
   ;; Work around a bug on OS X where system-name is FQDN
   (setq system-name (car (split-string system-name "\\."))))
 
-;; this is me
-(setq user-full-name "Matthew Boston")
-(setq user-mail-address "matthew.boston@gmail.com")
-
 ;; Configuration root
 (setq config-dir (file-name-directory (or (buffer-file-name) load-file-name)))
 (add-to-list 'load-path config-dir)
