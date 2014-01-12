@@ -1,22 +1,18 @@
 ;; Move more quickly
 (global-set-key (kbd "C-S-n")
-                (lambda ()
-                  (interactive)
+                (lambda () (interactive)
                   (ignore-errors (next-line 5))))
 
 (global-set-key (kbd "C-S-p")
-                (lambda ()
-                  (interactive)
+                (lambda () (interactive)
                   (ignore-errors (previous-line 5))))
 
 (global-set-key (kbd "C-S-f")
-                (lambda ()
-                  (interactive)
+                (lambda () (interactive)
                   (ignore-errors (forward-char 5))))
 
 (global-set-key (kbd "C-S-b")
-                (lambda ()
-                  (interactive)
+                (lambda () (interactive)
                   (ignore-errors (backward-char 5))))
 
 ;; easy window scrolling up and down.
@@ -25,8 +21,7 @@
 
 ;; join line below to current line
 (global-set-key (kbd "M-j")
-                (lambda ()
-                  (interactive)
+                (lambda () (interactive)
                   (join-line -1)))
 
 (global-set-key (kbd "C-<return>") 'msb/smart-open-line)
