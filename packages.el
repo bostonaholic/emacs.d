@@ -9,57 +9,72 @@
   (package-refresh-contents))
 
 (defvar msb/packages
-  '(ac-slime
-    ac-nrepl
+  '(;; general
     auto-complete
     ag
     buffer-move ; move buffers with ease
+    flymake
+    flymake-cursor
+    full-ack
+    midnight ; run actions at midnight
+    deft ; notes
+    ido-ubiquitous
+    smex ; ido-mode for M-x commands
+    window-number
+    yasnippet
+
+    ;; clojure
+    ac-nrepl
+    ac-slime
     clojure-mode
     clojure-test-mode
     clojurescript-mode
-    coffee-mode
-    cperl-mode
-    deft ; notes
-    feature-mode ; cukes
-    flymake
-    flymake-cursor
-    flymake-haml
-    flymake-jslint
-    flymake-less
-    flymake-ruby
-    flymake-sass
-    full-ack
-    haml-mode
-    handlebars-mode
-    ido-ubiquitous
-    less-css-mode
-    magit
-    markdown-mode
-    midnight ; run actions at midnight
-    monokai-theme
-    mustache-mode
     nrepl
     paredit
-    pivotal-tracker
-    prolog
-    ruby-mode
-    sass-mode
-    scss-mode
     slamhound
-    slim-mode
     slime
     slime-repl
-    smex ; ido-mode for M-x commands
-    solarized-theme
+
+    ;; ruby
+    ruby-mode
+    feature-mode ; cukes
+    flymake-ruby
+
+    ;; javascript
+    coffee-mode
+    flymake-jslint
+
+    ;; html and css
+    flymake-haml
+    flymake-less
+    flymake-sass
+    haml-mode
+    handlebars-mode
+    less-css-mode
+    markdown-mode
+    mustache-mode
+    sass-mode
+    scss-mode
+    slim-mode
+
+    ;; starter-kit
     starter-kit
     starter-kit-bindings
     starter-kit-js
     starter-kit-lisp
     starter-kit-perl
     starter-kit-ruby
-    window-number
+
+    ;; other programming
+    cperl-mode
+    magit
+    pivotal-tracker
+    prolog
     yaml-mode
-    yasnippet)
+
+    ;; themes
+    monokai-theme
+    solarized-theme)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (pkg msb/packages)
