@@ -1,4 +1,5 @@
 (add-to-list 'auto-mode-alist '("\\.irbrc$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.pryrc$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
 
 (add-hook 'ruby-mode-hook
