@@ -25,15 +25,12 @@
 
     ;; clojure
     ac-nrepl
-    ac-slime
     clojure-mode
     clojure-test-mode
     clojurescript-mode
-    nrepl
     paredit
     slamhound
-    slime
-    slime-repl
+    cider
 
     ;; ruby
     ruby-mode
@@ -60,6 +57,7 @@
     ;; starter-kit
     starter-kit
     starter-kit-bindings
+    starter-kit-eshell
     starter-kit-js
     starter-kit-lisp
     starter-kit-perl
