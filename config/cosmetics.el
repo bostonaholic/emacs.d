@@ -10,7 +10,7 @@
  visible-bell t)
 
 (setq-default
- ;; default tab-width
+ ;; Default tab-width
  tab-width 2)
 
 ;; Show what text is selected.
@@ -19,8 +19,12 @@
 ;; And delete selected text if we type over it.
 (delete-selection-mode t)
 
-;; turn on line numbers.
+;; Turn on line numbers.
 (global-linum-mode t)
+
+;; Turn off line hilight
+(global-hl-line-mode -1)
+(hl-line-mode -1)
 
 ;; Show the end of files.
 (when (not indicate-empty-lines)
@@ -29,8 +33,5 @@
 (when window-system
   ;; Make the window title reflect the current buffer.
   (setq frame-title-format (concat "%b - emacs@" system-name))
-  ;; load theme of choice
+  ;; Load theme of choice
   (msb/mono))
-
-(when (not window-system)
-  (hl-line-mode -1))
