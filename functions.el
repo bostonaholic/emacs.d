@@ -59,11 +59,11 @@ Position the cursor at its beginning, according to the current mode."
 
 (defun msb/dark ()
   (interactive)
-  (load-theme 'solarized-dark t))
+  (load-theme 'tsdh-dark t))
 
 (defun msb/light ()
   (interactive)
-  (load-theme 'solarized-light t))
+  (load-theme 'tsdh-light t))
 
 (defun msb/mono ()
   (interactive)

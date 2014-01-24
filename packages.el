@@ -68,11 +68,7 @@
     magit
     pivotal-tracker
     prolog
-    yaml-mode
-
-    ;; themes
-    monokai-theme
-    solarized-theme)
+    yaml-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (pkg msb/packages)
