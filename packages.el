@@ -30,6 +30,8 @@
     clojurescript-mode
     paredit
     slamhound
+    dash
+    pkg-info
     cider
 
     ;; ruby
