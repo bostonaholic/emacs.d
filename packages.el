@@ -28,6 +28,8 @@
     clojure-mode
     clojure-test-mode
     clojurescript-mode
+    midje-mode
+    midje-test-mode
     paredit
     slamhound
     dash
