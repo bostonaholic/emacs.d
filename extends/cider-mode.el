@@ -10,7 +10,7 @@
 ;; change default result prefix for REPL evaluation
 (setq cider-repl-result-prefix ";; => ")
 
-;; change the deafult result prefix for interactive evaluation
+;; change the default result prefix for interactive evaluation
 (setq cider-interactive-eval-result-prefix ";; => ")
 
 ;; font-lock REPL as in clojure-mode
