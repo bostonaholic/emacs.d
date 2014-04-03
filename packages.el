@@ -10,6 +10,7 @@
 
 (defvar msb/packages
   '(;; general
+    ace-jump-mode ; ultra-fast cursor movement
     auto-complete
     ag
     buffer-move ; move buffers with ease

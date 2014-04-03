@@ -16,6 +16,7 @@
 (load "bindings")
 
 ;; custom configurations
+(load "config/ace-jump-mode")
 (load "config/ack")
 (load "config/autocomplete")
 (load "config/deft")
