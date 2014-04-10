@@ -64,3 +64,8 @@ Position the cursor at its beginning, according to the current mode."
 (defun msb/light ()
   (interactive)
   (load-theme 'solarized-light t))
+
+(defun msb/none ()
+  (interactive)
+  (while custom-enabled-themes
+    (disable-theme (car custom-enabled-themes))))
