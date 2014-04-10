@@ -24,6 +24,9 @@
     window-number
     yasnippet
 
+    ;; themes
+    color-theme-solarized
+
     ;; clojure
     ac-nrepl
     clojure-mode
