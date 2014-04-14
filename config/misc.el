@@ -21,3 +21,6 @@
 
 ;; Emacs is fast for OSX again!
 (setq font-lock-verbose nil)
+
+;; Automatically revert files when changed on disk
+(global-auto-revert-mode t)
