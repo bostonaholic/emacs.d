@@ -1,5 +1,10 @@
 (require 'dired)
 
+;; compress or uncompress .zip files
+(eval-after-load "dired-aux"
+  '(add-to-list 'dired-compress-file-suffixes
+                '("\\.zip\\'" ".zip" "unzip")))
+
 (defun msb/dired-back-to-top ()
   (interactive)
   (beginning-of-buffer)
