@@ -26,7 +26,11 @@ first install a JDK
 
 `$ brew install leiningen`
 
-enable flymake for JavaScript
+To enable flymake for JavaScript, first we must add the `binary` repo for homebrew.
+
+`$ brew tap homebrew/binary`
+
+Now, we can install jsl.
 
 `$ brew install jsl`
 
