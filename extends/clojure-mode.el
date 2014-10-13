@@ -1,3 +1,6 @@
+;; ClojureScript files are clojure-mode
+(add-to-list 'auto-mode-alist '("\\.cljs$" . clojure-mode))
+
 ;; docs
 (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'nrepl-interaction-mode-hook 'nrepl-turn-on-eldoc-mode)
