@@ -19,11 +19,12 @@
 ;; enable paredit in REPL buffer
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
 
-;; ac-nrepl (Auto-complete for the nREPL)
-(add-hook 'cider-mode-hook 'ac-nrepl-setup)
-(add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
-(add-to-list 'ac-modes 'cider-mode)
-(add-to-list 'ac-modes 'cider-repl-mode)
+;; enable eldoc in Clojure buffers
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+
+;; auto complete in cider
+(add-hook 'cider-repl-mode-hook 'company-mode)
+(add-hook 'cider-mode-hook 'company-mode)
 
 ;; Poping-up contextual documentation
 (eval-after-load "cider"

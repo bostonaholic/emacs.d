@@ -16,9 +16,9 @@
     auto-complete
     ag
     buffer-move ; move buffers with ease
+    company ; modular text completion framework
     flymake
     flymake-cursor
-    full-ack
     midnight ; run actions at midnight
     deft ; notes
     ido-ubiquitous
@@ -27,20 +27,18 @@
     yasnippet
 
     ;; themes
-    color-theme-solarized
+    ; color-theme-solarized
+    solarized-theme
 
     ;; clojure
-    ac-nrepl
+    cider
+    ; cider-test
     clojure-mode
-    clojure-test-mode
-    clojurescript-mode
-    midje-mode
-    midje-test-mode
+    cljsbuild-mode
+    dash ; a modern list API for emacs
+    pkg-info ; provide information about emacs packages
     paredit
     slamhound
-    dash
-    pkg-info
-    cider
 
     ;; ruby
     ruby-mode
