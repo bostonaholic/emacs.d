@@ -6,7 +6,8 @@
   (setq system-name (car (split-string system-name "\\."))))
 
 ;; Configuration root
-(setq config-dir (concat (file-name-directory (or (buffer-file-name) load-file-name))
+(setq config-dir (concat (file-name-directory (or (buffer-file-name)
+                                                  load-file-name))
                          "lisp"))
 (add-to-list 'load-path config-dir)
 
