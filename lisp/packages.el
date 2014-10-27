@@ -13,25 +13,25 @@
   '(;; general
     ace-jump-mode ; ultra-fast cursor movement
     auto-complete
-    ag
+    ag ; the silver searcher
     buffer-move ; move buffers with ease
     company ; modular text completion framework
-    flymake
-    flymake-cursor
+    flymake ; on-the-fly syntax checks
+    flymake-cursor ; display flymake messages in the minibuffer
     midnight ; run actions at midnight
     deft ; notes
-    ido-ubiquitous
+    ido-ubiquitous ; use ido (nearly) everywhere
     smex ; ido-mode for M-x commands
     window-number
     yasnippet
 
     ;; themes
-    ; color-theme-solarized
+    ;; color-theme-solarized
     solarized-theme
 
     ;; clojure
     cider
-    ; cider-test
+    ;; cider-test
     clojure-mode
     cljsbuild-mode
     dash ; a modern list API for emacs
@@ -72,7 +72,7 @@
 
     ;; other programming
     cperl-mode
-    magit
+    magit ; control git from emacs
     pivotal-tracker
     prolog
     yaml-mode)
