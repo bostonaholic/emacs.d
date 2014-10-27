@@ -29,3 +29,5 @@
 ;; Poping-up contextual documentation
 (eval-after-load "cider"
   '(define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
+
+(global-set-key (kbd "C-c b") 'cider-eval-buffer)
