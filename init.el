@@ -17,6 +17,15 @@
 (load "hooks")
 (load "bindings")
 
+;; starter-kit
+(load "starter-kit")
+(load "starter-kit-bindings")
+(load "starter-kit-js")
+(load "starter-kit-lisp")
+(load "starter-kit-ruby")
+;; (load "starter-kit-eshell")
+;; (load "starter-kit-perl")
+
 ;; custom configurations
 (load "config/ace-jump-mode")
 (load "config/ack")
@@ -37,7 +46,6 @@
 (load "extends/html-mode")
 (load "extends/ido-mode")
 (load "extends/prolog-mode")
-(load "extends/ruby-mode")
 (load "extends/scss-mode")
 (load "extends/sh-mode")
 (load "extends/window-number-mode")

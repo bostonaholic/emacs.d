@@ -3,7 +3,7 @@
 
 ;; Save file backups in a temporary directory.
 (setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
+			`(("." . ,(concat user-emacs-directory "backups"))))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 

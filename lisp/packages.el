@@ -2,7 +2,6 @@
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ;; ("melpa" . "http://melpa.org/packages/")
                          ("melpa-stable" . "http://stable.melpa.org/packages/")))
 (package-initialize)
 
@@ -21,6 +20,7 @@
     midnight ; run actions at midnight
     deft ; notes
     ido-ubiquitous ; use ido (nearly) everywhere
+    paredit
     smex ; ido-mode for M-x commands
     window-number
     yasnippet
@@ -36,7 +36,6 @@
     cljsbuild-mode
     dash ; a modern list API for emacs
     pkg-info ; provide information about emacs packages
-    paredit
     slamhound
 
     ;; ruby
@@ -60,15 +59,6 @@
     sass-mode
     scss-mode
     slim-mode
-
-    ;; starter-kit
-    starter-kit
-    starter-kit-bindings
-    starter-kit-eshell
-    starter-kit-js
-    starter-kit-lisp
-    starter-kit-perl
-    starter-kit-ruby
 
     ;; other programming
     cperl-mode
