@@ -36,6 +36,7 @@
 (load "config/ispell")
 (load "config/kibit")
 (load "config/pivotal")
+(load "config/rbenv")
 (load "config/yasnippet")
 
 ;; extend modes
