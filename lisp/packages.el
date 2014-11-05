@@ -46,7 +46,9 @@
 
     ;; javascript
     coffee-mode
+    json-mode
     flymake-jslint
+    flymake-json
 
     ;; html and css
     flymake-haml
