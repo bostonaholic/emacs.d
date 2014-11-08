@@ -31,3 +31,6 @@
   '(define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
 
 (global-set-key (kbd "C-c b") 'cider-eval-buffer)
+
+;; store the REPL history in a file
+(setq cider-repl-history-file "~/.cider-repl-history")
