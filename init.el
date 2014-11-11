@@ -42,6 +42,7 @@
 ;; extend modes
 (load "extends/clojure-mode")
 (load "extends/cider-mode")
+(load "extends/coffee-mode")
 (load "extends/cperl-mode")
 (load "extends/dired-mode")
 (load "extends/html-mode")
