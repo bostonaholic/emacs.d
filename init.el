@@ -1,5 +1,13 @@
 ;;; init.el --- Where all the magic begins
 
+;; User details
+(setq user-full-name "Matthew Boston")
+(setq user-mail-address "matthew.boston@gmail.com")
+
+;; Environment
+(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+(require 'cl)
+
 ;; OS X workarounds
 (when (eq system-type 'darwin)
   ;; Work around a bug on OS X where system-name is FQDN
