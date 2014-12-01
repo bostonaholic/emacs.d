@@ -56,6 +56,7 @@
 (load "extends/html-mode")
 (load "extends/ido-mode")
 (load "extends/prolog-mode")
+(load "extends/ruby-mode")
 (load "extends/scss-mode")
 (load "extends/sh-mode")
 (load "extends/window-number-mode")
