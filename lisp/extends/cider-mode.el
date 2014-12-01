@@ -34,3 +34,6 @@
 
 ;; store the REPL history in a file
 (setq cider-repl-history-file "~/.cider-repl-history")
+
+;; logging
+(setq nrepl-log-messages t)
