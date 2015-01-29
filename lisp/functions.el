@@ -69,3 +69,17 @@ Position the cursor at its beginning, according to the current mode."
   (interactive)
   (while custom-enabled-themes
     (disable-theme (car custom-enabled-themes))))
+
+(defun msb/pbcopy ()
+  (interactive)
+  (call-process-region (point) (mark) "pbcopy")
+  (setq deactivate-mark t))
+
+(defun msb/pbpaste ()
+  (interactive)
+  (call-process-region (point) (if mark-active (mark) (point)) "pbpaste" t t))
+
+(defun msb/pbcut ()
+  (interactive)
+  (msb/pbcopy)
+  (delete-region (region-beginning) (region-end)))

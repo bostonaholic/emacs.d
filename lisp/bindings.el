@@ -40,5 +40,9 @@
 (global-set-key (kbd "M-}") 'enlarge-window-horizontally)
 (global-set-key (kbd "M-{") 'shrink-window-horizontally)
 
+(global-set-key (kbd "C-c c") 'msb/pbcopy)
+(global-set-key (kbd "C-c v") 'msb/pbpaste)
+(global-set-key (kbd "C-c x") 'msb/pbcut)
+
 ;; start deft-mode
 (global-set-key (kbd "C-c d") 'deft)
