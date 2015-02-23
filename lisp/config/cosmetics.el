@@ -22,6 +22,9 @@
 ;; Turn on line numbers.
 (global-linum-mode t)
 
+;; format line numbers
+(setq linum-format "%4d ")
+
 ;; Turn off line hilight
 (global-hl-line-mode -1)
 (hl-line-mode -1)
