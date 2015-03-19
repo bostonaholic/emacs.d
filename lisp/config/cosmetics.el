@@ -8,9 +8,7 @@
  ;; Do not show a splash screen.
  inhibit-splash-screen t
  ;; Never show dialog boxes.
- use-dialog-box nil
- ;; Flash the screen on errors.
- visible-bell t)
+ use-dialog-box nil)
 
 (setq-default
  ;; Default tab-width
