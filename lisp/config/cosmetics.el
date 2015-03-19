@@ -1,6 +1,9 @@
 ;; font
 (set-face-attribute 'default nil :family "Monaco" :height 140)
 
+;; Global whitespace mode
+(global-whitespace-mode t)
+
 (setq
  ;; Do not show a splash screen.
  inhibit-splash-screen t
@@ -11,7 +14,11 @@
 
 (setq-default
  ;; Default tab-width
- tab-width 2)
+ tab-width 2
+ ;; Show trailing whitespace
+ show-trailing-whitespace t
+ ;; max column width
+ whitespace-line-column 9999)
 
 ;; Show what text is selected.
 (transient-mark-mode t)
