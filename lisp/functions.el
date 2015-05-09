@@ -32,21 +32,16 @@
     (move-to-column col)))
 ;; (global-set-key (kbd "C-S-<down>") 'msb/move-line-down)
 
-;; compile user init file to descrease load time
-(defun msb/compiled-user-init-file ()
-  (concat (substring user-init-file 0 (- (length user-init-file) 3)) ".elc"))
-
-(defun msb/byte-compile-user-init-file ()
-  (let ((byte-compile-warnings '(unresolved)))
+(defun msb/byte-compile-file ()
+  (let ((byte-compile-warnings '(unresolved))
+        (byte-compiled-file (concat buffer-file-name "c")))
     ;; in case compilation fails, don't leave the old .elc around:
-    (when (file-exists-p (msb/compiled-user-init-file))
-      (delete-file (msb/compiled-user-init-file)))
-    (byte-compile-file user-init-file)
-    (message "%s compiled" user-init-file)))
+    (when (file-exists-p byte-compiled-file)
+      (delete-file byte-compiled-file))
+    (byte-compile-file buffer-file-name)))
 
-(defun msb/after-save-compile-init-hook ()
-  (when (equal (or buffer-file-name "") user-init-file)
-    (add-hook 'after-save-hook 'msb/byte-compile-user-init-file t t)))
+(defun msb/after-save-byte-compile-file-hook ()
+  (add-hook 'after-save-hook 'msb/byte-compile-file t t))
 
 (defun msb/smart-open-line ()
   "Insert an empty line after the current line.
