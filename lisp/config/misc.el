@@ -1,6 +1,9 @@
 ;; let emacs find homebrews
 (push "/usr/local/bin" exec-path)
 
+;; avoid conflicts the GNU utils are prefixed with g, so ls becomes gls
+(setq insert-directory-program (executable-find "gls"))
+
 ;; Save file backups in a temporary directory.
 (setq backup-directory-alist
       `(("." . ,(concat user-emacs-directory "backups"))))
