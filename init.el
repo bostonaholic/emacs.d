@@ -2,7 +2,7 @@
 
 ;; User details
 (setq user-full-name "Matthew Boston")
-(setq user-mail-address "matthew.boston@gmail.com")
+(setq user-mail-address "matthew@matthewboston.com")
 
 ;; Environment
 (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
