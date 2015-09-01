@@ -82,3 +82,5 @@
  '(magit-cherry-unmatched ((t nil)))
  '(magit-cherry-equivalent ((t nil)))
  '(magit-filename ((t nil))))
+
+(setq magit-push-always-verify nil)
