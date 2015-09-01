@@ -6,6 +6,7 @@
 
 ;; Environment
 (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+(require 'cl)
 (require 'cl-lib)
 
 ;; OS X workarounds
