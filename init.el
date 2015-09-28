@@ -1,5 +1,8 @@
 ;;; init.el --- Where all the magic begins
 
+;; increase garbage collection threshold
+(setq gc-cons-threshold 2400000)
+
 ;; User details
 (setq user-full-name "Matthew Boston")
 (setq user-mail-address "matthew@matthewboston.com")
