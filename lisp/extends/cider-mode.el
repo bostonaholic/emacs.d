@@ -13,6 +13,9 @@
 ;; change the default result prefix for interactive evaluation
 (setq cider-interactive-eval-result-prefix ";; => ")
 
+;; always pretty print results in the REPL
+(setq cider-repl-use-pretty-printing t)
+
 ;; font-lock REPL as in clojure-mode
 (setq cider-repl-use-clojure-font-lock t)
 
