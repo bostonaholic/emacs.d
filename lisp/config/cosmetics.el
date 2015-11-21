@@ -1,5 +1,5 @@
 ;; font
-(set-face-attribute 'default nil :family "Monaco" :height 140)
+(set-face-attribute 'default nil :family "Monaco" :height 160)
 
 ;; Global whitespace mode
 (global-whitespace-mode t)
