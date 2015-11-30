@@ -32,7 +32,6 @@
 ;; starter-kit
 (load "starter-kit")
 (load "starter-kit-bindings")
-(load "starter-kit-js")
 (load "starter-kit-lisp")
 (load "starter-kit-ruby")
 ;; (load "starter-kit-eshell")
@@ -60,6 +59,7 @@
 (load "extends/dired-mode")
 (load "extends/html-mode")
 (load "extends/ido-mode")
+(load "extends/js2-mode")
 (load "extends/markdown-mode")
 (load "extends/prolog-mode")
 (load "extends/ruby-mode")

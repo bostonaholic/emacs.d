@@ -47,6 +47,8 @@
     flymake-ruby
 
     ;; javascript
+    ;; ac-js2-mode
+    js2-mode
     coffee-mode
     json-mode
     flymake-jslint
