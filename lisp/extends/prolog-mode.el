@@ -1,9 +1,8 @@
 ;;; settings for Prolog
 ;;; taken from http://www.swi-prolog.org/FAQ/GnuEmacs.html
 
-(setq auto-mode-alist
-      (cons (cons "\\.pl" 'prolog-mode)
-            auto-mode-alist))
+(add-to-list 'auto-mode-alist '("\\.pl" 'prolog-mode))
+(add-to-list 'auto-mode-alist '("\\.pl$" 'prolog-mode))
 
 (setq prolog-program-name (quote (((getenv "EPROLOG") (eval (getenv "EPROLOG")))
                                    (eclipse "eclipse")

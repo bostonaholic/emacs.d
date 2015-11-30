@@ -1,2 +1,2 @@
-(setq auto-mode-alist (cons '("\\.eco$" . html-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.erb$" . html-mode) auto-mode-alist))
+(add-to-list 'auto-mode-alist '("\\.eco$" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.erb$" . html-mode))
