@@ -32,7 +32,6 @@
     ;; ruby
     ruby-mode
     rbenv
-    feature-mode ; cukes
     flymake-ruby
 
     ;; javascript
