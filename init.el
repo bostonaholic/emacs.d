@@ -26,7 +26,6 @@
 ;; my super-special configurations
 (load "packages")
 (load "functions")
-(load "hooks")
 (load "bindings")
 
 ;; starter-kit
