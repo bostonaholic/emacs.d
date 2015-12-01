@@ -41,7 +41,6 @@
 (load "extends/cider-mode")
 (load "extends/coffee-mode")
 (load "extends/cperl-mode")
-(load "extends/dired-mode")
 (load "extends/emacs-lisp-mode")
 (load "extends/html-mode")
 (load "extends/ido-mode")
