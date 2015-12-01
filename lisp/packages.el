@@ -48,10 +48,8 @@
     flymake-less
     flymake-sass
     haml-mode
-    handlebars-mode
     less-css-mode
     markdown-mode
-    mustache-mode
     sass-mode
     scss-mode
     slim-mode
