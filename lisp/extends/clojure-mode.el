@@ -1,4 +1,4 @@
-(eval-after-load "clojure-mode"
+(eval-after-load 'clojure-mode
   '(progn
      (add-hook 'clojure-mode-hook 'paredit-mode)
      (add-hook 'clojure-mode-hook 'eldoc-mode)

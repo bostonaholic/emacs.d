@@ -4,12 +4,18 @@
 (add-to-list 'auto-mode-alist '("\\.pl" 'prolog-mode))
 (add-to-list 'auto-mode-alist '("\\.pl$" 'prolog-mode))
 
-(setq prolog-program-name (quote (((getenv "EPROLOG") (eval (getenv "EPROLOG")))
-                                   (eclipse "eclipse")
-                                   (mercury nil)
-                                   (sicstus "sicstus")
-                                   (swi "/usr/local/bin/swipl")
-                                   (gnu "gprolog")
-                                   (t "prolog"))))
+(autoload 'run-prolog "prolog" "Start a Prolog sub-process." t)
+(autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
+(autoload 'mercury-mode "prolog" "Major mode for editing Mercury programs." t)
 
-(setq prolog-system 'swi)
+(eval-after-load 'prolog
+  '(progn
+     (setq prolog-program-name (quote (((getenv "EPROLOG") (eval (getenv "EPROLOG")))
+                                       (eclipse "eclipse")
+                                       (mercury nil)
+                                       (sicstus "sicstus")
+                                       (swi "/usr/local/bin/swipl")
+                                       (gnu "gprolog")
+                                       (t "prolog"))))
+
+     (setq prolog-system 'swi)))

@@ -1,4 +1,4 @@
-(eval-after-load "cider-mode"
+(eval-after-load 'cider-mode
   '(progn
      ;; hide *nrepl-connection* and *nrepl-server* from buffer list
      (setq nrepl-hide-special-buffers t)
