@@ -7,5 +7,4 @@
 
 (add-hook 'js-mode-hook 'msb/pretty-function)
 
-(add-hook 'json-mode-hook 'flymake-json-load)
 (add-hook 'json-mode-hook 'paredit-mode)
