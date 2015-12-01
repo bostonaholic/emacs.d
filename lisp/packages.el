@@ -17,7 +17,6 @@
     company ; modular text completion framework
     flymake ; on-the-fly syntax checks
     flymake-cursor ; display flymake messages in the minibuffer
-    midnight ; run actions at midnight
     ido-ubiquitous ; use ido (nearly) everywhere
     paredit
     smex ; ido-mode for M-x commands

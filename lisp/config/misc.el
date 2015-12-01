@@ -16,9 +16,6 @@
 ;; All files should end in a newline.
 (setq require-final-newline t)
 
-;; clean un-used buffers at given time
-(midnight-delay-set 'midnight-delay "3:33pm")
-
 ;; version control to follow symlinked files
 (setq vc-follow-symlinks t)
 
