@@ -33,6 +33,7 @@
     ruby-mode
     rbenv
     flymake-ruby
+    yaml-mode
 
     ;; javascript
     ;; ac-js2-mode
@@ -57,8 +58,7 @@
     ;; other programming
     cperl-mode
     magit ; control git from emacs
-    prolog
-    yaml-mode)
+    prolog)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (pkg msb/packages)
