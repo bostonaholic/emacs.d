@@ -5,6 +5,4 @@
           (define-key js-mode-map "}" 'paredit-close-curly)
           (setq js-indent-level 2)))
 
-(add-hook 'js-mode-hook 'msb/pretty-function)
-
 (add-hook 'json-mode-hook 'paredit-mode)
