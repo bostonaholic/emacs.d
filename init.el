@@ -29,7 +29,6 @@
 (load "bindings")
 
 ;; starter-kit
-(load "starter-kit")
 (load "starter-kit-bindings")
 (load "starter-kit-lisp")
 (load "starter-kit-ruby")

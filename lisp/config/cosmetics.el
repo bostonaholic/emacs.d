@@ -1,20 +1,35 @@
+;; Turn off mouse interface early in startup to avoid momentary display
+(dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
+	(when (fboundp mode) (funcall mode -1)))
+
 ;; font
 (set-face-attribute 'default nil :family "Monaco" :height 160)
 
 ;; Global whitespace mode
 (global-whitespace-mode t)
 
+(show-paren-mode t)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (setq
  ;; Do not show a splash screen.
  inhibit-splash-screen t
  ;; Never show dialog boxes.
- use-dialog-box nil)
+ use-dialog-box nil
+
+ visible-bell t
+ inhibit-startup-message t
+ shift-select-mode nil
+ apropos-do-all t
+ uniquify-buffer-name-style 'forward
+ whitespace-style '(face trailing lines-tail tabs))
 
 (setq-default
  ;; Default tab-width
  tab-width 2
- ;; Show trailing whitespace
- show-trailing-whitespace t
+ ;; do not use tabs
+ indent-tabs-mode nil
  ;; max column width
  whitespace-line-column 9999)
 

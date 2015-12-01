@@ -78,3 +78,31 @@ Position the cursor at its beginning, according to the current mode."
   (interactive)
   (msb/pbcopy)
   (delete-region (region-beginning) (region-end)))
+
+(defun msb/pretty-lambda ()
+  (font-lock-add-keywords
+   nil `(("(?\\(lambda\\>\\)"
+          (0 (progn (compose-region (match-beginning 1) (match-end 1)
+                                    ,(make-char 'greek-iso8859-7 107))
+                    nil))))))
+
+(defun msb/pretty-function ()
+  (font-lock-add-keywords
+   'js-mode `(("\\(function *\\)("
+               (0 (progn (compose-region (match-beginning 1)
+                                         (match-end 1)
+                                         "\u0192")
+                         nil))))))
+
+(defun msb/pretty-fn ()
+  (font-lock-add-keywords
+   nil `(("(\\(\\<fn\\>\\)"
+          (0 (progn (compose-region (match-beginning 1)
+                                    (match-end 1)
+                                    "\u0192"
+                                    'decompose-region)))))))
+
+(defun msb/add-watchwords ()
+  (font-lock-add-keywords
+   nil '(("\\<\\(FIX\\(ME\\)?\\|TODO\\|HACK\\|REFACTOR\\|NOCOMMIT\\)"
+          1 font-lock-warning-face t))))
