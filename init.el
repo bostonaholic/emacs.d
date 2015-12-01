@@ -40,7 +40,6 @@
 ;; custom configurations
 (load "config/ack")
 (load "config/autocomplete")
-(load "config/deft")
 (load "config/erc")
 (load "config/flymake")
 (load "config/ispell")

@@ -18,7 +18,6 @@
     flymake ; on-the-fly syntax checks
     flymake-cursor ; display flymake messages in the minibuffer
     midnight ; run actions at midnight
-    deft ; notes
     ido-ubiquitous ; use ido (nearly) everywhere
     paredit
     smex ; ido-mode for M-x commands
