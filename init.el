@@ -46,6 +46,7 @@
 (load "config/magit")
 (load "config/pivotal")
 (load "config/rbenv")
+(load "config/smex")
 
 ;; extend modes
 (load "extends/clojure-mode")

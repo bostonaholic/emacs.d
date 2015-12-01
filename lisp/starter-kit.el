@@ -5,7 +5,6 @@
     idle-highlight-mode
     ;; magit
     ;; paredit
-    ;; smex
     ))
 
 (package-initialize)
@@ -16,10 +15,6 @@
 ;; Turn off mouse interface early in startup to avoid momentary display
 (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
 	(when (fboundp mode) (funcall mode -1)))
-
-(setq smex-save-file (concat user-emacs-directory ".smex-items"))
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
 
 (defun msb/pretty-lambda ()
   (font-lock-add-keywords
