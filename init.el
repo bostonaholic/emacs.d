@@ -38,7 +38,6 @@
 ;; (load "starter-kit-perl")
 
 ;; custom configurations
-(load "config/ack")
 (load "config/autocomplete")
 (load "config/erc")
 (load "config/flymake")
