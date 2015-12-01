@@ -28,11 +28,6 @@
 (load "functions")
 (load "bindings")
 
-;; starter-kit
-(load "starter-kit-ruby")
-;; (load "starter-kit-eshell")
-;; (load "starter-kit-perl")
-
 ;; custom configurations
 (load "config/autocomplete")
 (load "config/erc")
