@@ -3,7 +3,6 @@
 (defvar msb/starter-kit-packages
   '(find-file-in-project
     idle-highlight-mode
-    ;; ido-ubiquitous
     ;; magit
     ;; paredit
     ;; smex
@@ -67,8 +66,6 @@
 (show-paren-mode t)
 (setq-default indent-tabs-mode nil)
 
-(ido-mode t)
-(ido-ubiquitous-mode)
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t
       ido-auto-merge-work-directories-length nil

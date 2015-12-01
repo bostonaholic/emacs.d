@@ -1,2 +1,3 @@
-;; make ido display choices vertically
-;; (setq ido-separator "\n")
+(ido-mode t)
+(ido-everywhere t)
+(ido-ubiquitous-mode t)
