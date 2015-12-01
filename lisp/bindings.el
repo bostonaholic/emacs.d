@@ -1,3 +1,5 @@
+(global-set-key (kbd "C-c f") 'find-file-in-project)
+
 ;; Move more quickly
 (global-set-key (kbd "C-S-n")
                 (lambda () (interactive)

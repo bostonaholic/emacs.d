@@ -1,6 +1,5 @@
 ;;; starter-kit-bindings.el
 
-(global-set-key (kbd "C-c f") 'find-file-in-project)
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 (global-set-key (kbd "M-/") 'hippie-expand)
 

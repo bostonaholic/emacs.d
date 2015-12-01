@@ -1,8 +1,7 @@
 ;;; starter-kit.el
 
 (defvar msb/starter-kit-packages
-  '(find-file-in-project
-    idle-highlight-mode
+  '(idle-highlight-mode
     ;; magit
     ;; paredit
     ))
