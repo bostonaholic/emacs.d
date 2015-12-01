@@ -39,6 +39,7 @@
     js2-mode
     coffee-mode
     json-mode
+    flymake-coffee
     flymake-jslint
     flymake-json
 
