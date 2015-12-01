@@ -18,6 +18,7 @@
     find-file-in-project
     flymake ; on-the-fly syntax checks
     flymake-cursor ; display flymake messages in the minibuffer
+    idle-highlight-mode
     ido-ubiquitous ; use ido (nearly) everywhere
     paredit
     smex ; ido-mode for M-x commands

@@ -1,7 +1,7 @@
 ;;; starter-kit.el
 
 (defvar msb/starter-kit-packages
-  '(idle-highlight-mode
+  '(
     ;; magit
     ;; paredit
     ))
@@ -42,10 +42,6 @@
   (font-lock-add-keywords
    nil '(("\\<\\(FIX\\(ME\\)?\\|TODO\\|HACK\\|REFACTOR\\|NOCOMMIT\\)"
           1 font-lock-warning-face t))))
-
-(add-hook 'prog-mode-hook 'msb/pretty-lambda)
-(add-hook 'prog-mode-hook 'msb/add-watchwords)
-(add-hook 'prog-mode-hook 'idle-highlight-mode)
 
 (setq visible-bell t
 			inhibit-startup-message t

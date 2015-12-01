@@ -57,6 +57,7 @@
 (load "extends/ido-mode")
 (load "extends/js2-mode")
 (load "extends/markdown-mode")
+(load "extends/prog-mode")
 (load "extends/prolog-mode")
 (load "extends/ruby-mode")
 (load "extends/scss-mode")
