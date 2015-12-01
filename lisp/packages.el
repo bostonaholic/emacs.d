@@ -27,12 +27,7 @@
 
     ;; clojure
     cider
-    ;; cider-test
     clojure-mode
-    cljsbuild-mode
-    dash ; a modern list API for emacs
-    pkg-info ; provide information about emacs packages
-    slamhound
 
     ;; ruby
     ruby-mode
