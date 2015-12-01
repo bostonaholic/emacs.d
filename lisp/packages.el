@@ -31,7 +31,6 @@
     clojure-mode
 
     ;; ruby
-    ruby-mode
     rbenv
     flymake-ruby
     yaml-mode
