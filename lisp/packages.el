@@ -11,7 +11,6 @@
 
 (defvar msb/packages
   '(;; general
-    ace-jump-mode ; ultra-fast cursor movement
     auto-complete
     ag ; the silver searcher
     buffer-move ; move buffers with ease
