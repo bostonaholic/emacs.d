@@ -29,7 +29,7 @@
 (load "bindings")
 
 ;; custom configurations
-(load "config/autocomplete")
+(load "config/auto-complete")
 (load "config/erc")
 (load "config/flymake")
 (load "config/ispell")
