@@ -4,7 +4,7 @@
 (add-hook 'coffee-mode-hook 'flymake-coffee-load)
 (add-hook 'haml-mode-hook 'flymake-haml-load)
 (add-hook 'js-mode-hook 'flymake-jslint-load)
-(add-hook 'json-mode 'flymake-json-load)
+(add-hook 'json-mode-hook 'flymake-json-load)
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 (add-hook 'sass-mode-hook 'flymake-sass-load)
 (add-hook 'scss-mode-hook 'flymake-sass-load)

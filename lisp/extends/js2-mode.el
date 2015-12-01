@@ -14,5 +14,4 @@
 
 (eval-after-load 'json-mode
   '(progn
-     (add-hook 'json-mode-hook 'flymake-json-load)
      (add-hook 'json-mode-hook 'paredit-mode)))
