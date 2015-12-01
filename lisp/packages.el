@@ -23,7 +23,6 @@
     window-number
 
     ;; themes
-    ;; color-theme-solarized
     solarized-theme
 
     ;; clojure
