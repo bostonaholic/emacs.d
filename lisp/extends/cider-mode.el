@@ -1,38 +1,39 @@
-;; hide *nrepl-connection* and *nrepl-server* from buffer list
-(setq nrepl-hide-special-buffers t)
+(eval-after-load "cider-mode"
+  '(progn
+     ;; hide *nrepl-connection* and *nrepl-server* from buffer list
+     (setq nrepl-hide-special-buffers t)
 
-;; override buffer name separator
-(setq nrepl-buffer-name-separator "-")
+     ;; override buffer name separator
+     (setq nrepl-buffer-name-separator "-")
 
-;; show port in nrepl buffer name
-(setq nrepl-buffer-name-show-port t)
+     ;; show port in nrepl buffer name
+     (setq nrepl-buffer-name-show-port t)
 
-;; change default result prefix for REPL evaluation
-(setq cider-repl-result-prefix ";; => ")
+     ;; Suppress auto-enabling of cider-mode in clojure-mode buffers, when starting CIDER
+     (setq cider-auto-mode nil)
 
-;; change the default result prefix for interactive evaluation
-(setq cider-interactive-eval-result-prefix ";; => ")
+     ;; change default result prefix for REPL evaluation
+     (setq cider-repl-result-prefix ";; => ")
 
-;; always pretty print results in the REPL
-(setq cider-repl-use-pretty-printing t)
+     ;; change the default result prefix for interactive evaluation
+     (setq cider-interactive-eval-result-prefix ";; => ")
 
-;; font-lock REPL as in clojure-mode
-(setq cider-repl-use-clojure-font-lock t)
+     ;; always pretty print results in the REPL
+     (setq cider-repl-use-pretty-printing t)
 
-;; enable paredit in REPL buffer
-(add-hook 'cider-repl-mode-hook 'paredit-mode)
+     ;; font-lock REPL as in clojure-mode
+     (setq cider-repl-use-clojure-font-lock t)
 
-;; enable eldoc in Clojure buffers
-(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+     ;; enable paredit in REPL buffer
+     (add-hook 'cider-repl-mode-hook 'paredit-mode)
 
-;; Poping-up contextual documentation
-(eval-after-load "cider"
-  '(define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))
+     ;; enable eldoc in Clojure buffers
+     (add-hook 'cider-mode-hook 'eldoc-mode)
 
-(global-set-key (kbd "C-c b") 'cider-eval-buffer)
+     (global-set-key (kbd "C-c b") 'cider-eval-buffer)
 
-;; store the REPL history in a file
-(setq cider-repl-history-file "~/.cider-repl-history")
+     ;; store the REPL history in a file
+     (setq cider-repl-history-file "~/.cider-repl-history")
 
-;; logging
-(setq nrepl-log-messages t)
+     ;; logging
+     (setq nrepl-log-messages t)))
