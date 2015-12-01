@@ -21,8 +21,6 @@
     paredit
     smex ; ido-mode for M-x commands
     window-number
-    yasnippet
-    yas-jit ; load yasnippets on demand
 
     ;; themes
     ;; color-theme-solarized

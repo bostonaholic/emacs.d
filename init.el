@@ -47,7 +47,6 @@
 (load "config/magit")
 (load "config/pivotal")
 (load "config/rbenv")
-(load "config/yasnippet")
 
 ;; extend modes
 (load "extends/clojure-mode")
