@@ -33,7 +33,6 @@
 (load "config/erc")
 (load "config/flymake")
 (load "config/ispell")
-(load "config/kibit")
 (load "config/magit")
 (load "config/rbenv")
 (load "config/smex")
