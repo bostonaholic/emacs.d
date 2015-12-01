@@ -29,7 +29,6 @@
 (load "bindings")
 
 ;; starter-kit
-(load "starter-kit-lisp")
 (load "starter-kit-ruby")
 ;; (load "starter-kit-eshell")
 ;; (load "starter-kit-perl")
@@ -50,6 +49,7 @@
 (load "extends/coffee-mode")
 (load "extends/cperl-mode")
 (load "extends/dired-mode")
+(load "extends/emacs-lisp-mode")
 (load "extends/html-mode")
 (load "extends/ido-mode")
 (load "extends/js2-mode")
