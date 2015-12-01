@@ -46,5 +46,17 @@
 (global-set-key (kbd "C-c v") 'msb/pbpaste)
 (global-set-key (kbd "C-c x") 'msb/pbcut)
 
-;; start deft-mode
-(global-set-key (kbd "C-c d") 'deft)
+;; font size
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+
+;; Use regex searches by default.
+(global-set-key (kbd "C-s") 'isearch-forward-regexp)
+(global-set-key (kbd "\C-r") 'isearch-backward-regexp)
+(global-set-key (kbd "M-%") 'query-replace-regexp)
+(global-set-key (kbd "C-M-s") 'isearch-forward)
+(global-set-key (kbd "C-M-r") 'isearch-backward)
+(global-set-key (kbd "C-M-%") 'query-replace)
+
+;; Help should search more than just commands
+(define-key 'help-command "a" 'apropos)

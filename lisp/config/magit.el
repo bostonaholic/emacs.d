@@ -1,3 +1,7 @@
+(global-set-key (kbd "C-c g") 'magit-status)
+
+(setq magit-push-always-verify nil)
+
 ;; override terrible magit-diff faces
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -82,5 +86,3 @@
  '(magit-cherry-unmatched ((t nil)))
  '(magit-cherry-equivalent ((t nil)))
  '(magit-filename ((t nil))))
-
-(setq magit-push-always-verify nil)
