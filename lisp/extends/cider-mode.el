@@ -25,10 +25,6 @@
 ;; enable eldoc in Clojure buffers
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
-;; auto complete in cider
-(add-hook 'cider-repl-mode-hook 'company-mode)
-(add-hook 'cider-mode-hook 'company-mode)
-
 ;; Poping-up contextual documentation
 (eval-after-load "cider"
   '(define-key cider-mode-map (kbd "C-c C-d") 'ac-nrepl-popup-doc))

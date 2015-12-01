@@ -14,7 +14,6 @@
     auto-complete
     ag ; the silver searcher
     buffer-move ; move buffers with ease
-    company ; modular text completion framework
     find-file-in-project
     flymake ; on-the-fly syntax checks
     flymake-cursor ; display flymake messages in the minibuffer
