@@ -44,7 +44,6 @@
 (load "config/ispell")
 (load "config/kibit")
 (load "config/magit")
-(load "config/pivotal")
 (load "config/rbenv")
 (load "config/smex")
 

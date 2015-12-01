@@ -57,7 +57,6 @@
     ;; other programming
     cperl-mode
     magit ; control git from emacs
-    pivotal-tracker
     prolog
     yaml-mode)
   "A list of packages to ensure are installed at launch.")
