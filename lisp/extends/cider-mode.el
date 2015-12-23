@@ -9,9 +9,6 @@
      ;; show port in nrepl buffer name
      (setq nrepl-buffer-name-show-port t)
 
-     ;; Suppress auto-enabling of cider-mode in clojure-mode buffers, when starting CIDER
-     (setq cider-auto-mode nil)
-
      ;; change default result prefix for REPL evaluation
      (setq cider-repl-result-prefix ";; => ")
 
