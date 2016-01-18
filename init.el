@@ -34,6 +34,7 @@
 (load "config/flymake")
 (load "config/ispell")
 (load "config/magit")
+(load "config/midnight")
 (load "config/smex")
 
 ;; extend modes
