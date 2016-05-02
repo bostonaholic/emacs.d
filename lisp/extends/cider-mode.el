@@ -1,5 +1,8 @@
 (eval-after-load 'cider-mode
   '(progn
+     ;; do not display help banner on start
+     (setq cider-repl-display-help-banner nil)
+
      ;; hide *nrepl-connection* and *nrepl-server* from buffer list
      (setq nrepl-hide-special-buffers t)
 
