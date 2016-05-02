@@ -1,10 +1,8 @@
-Matthew Boston's Emacs 24 config
+Matthew Boston's Emacs config
 
 ## Dependencies
 
-This works best with Emacs 24. You can install via
-[emacsforosx](http://emacsforosx.com), directly from
-[GNU Emacs](http://www.gnu.org/software/emacs/), or homebrew.
+You can install Emcas via [emacsforosx](http://emacsforosx.com), directly from [GNU Emacs](http://www.gnu.org/software/emacs/), or [homebrew](http://brew.sh/).
 
 ## Installation
 
