@@ -15,5 +15,5 @@
   '(progn
      (global-rbenv-mode)
      (add-hook 'ruby-mode-hook 'rbenv-use-corresponding)
-     (setq rbenv-installation-dir "/usr/local")
+     (setq rbenv-installation-dir "/usr/local/bin")
      (setq rbenv-show-active-ruby-in-modeline t)))
