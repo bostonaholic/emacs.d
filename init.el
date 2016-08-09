@@ -1,7 +1,14 @@
 ;;; init.el --- Where all the magic begins
 
 ;; increase garbage collection threshold
-(setq gc-cons-threshold 2400000)
+(defun msb/minibuffer-setup-hook ()
+  (setq gc-cons-threshold most-positive-fixnum))
+
+(defun msb/minibuffer-exit-hook ()
+  (setq gc-cons-threshold 800000))
+
+(add-hook 'minibuffer-setup-hook #'msb/minibuffer-setup-hook)
+(add-hook 'minibuffer-exit-hook #'msb/minibuffer-exit-hook)
 
 ;; User details
 (setq user-full-name "Matthew Boston")
