@@ -62,6 +62,13 @@
 
 (use-package monokai-theme)
 
+(use-package paredit
+  :diminish paredit-mode
+  :config
+  (add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
+  (add-hook 'lisp-mode-hook 'enable-paredit-mode)
+  (add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode))
+
 (use-package projectile
   :diminish projectile-mode
   :config (projectile-global-mode))
