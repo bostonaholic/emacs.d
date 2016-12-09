@@ -45,6 +45,8 @@
   :bind ("C-c g" . magit-status)
   :init (setq magit-commit-arguments (quote ("--gpg-sign=76D1E98162B00F5A"))))
 
+(use-package monokai-theme)
+
 (setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
 (load custom-file t)
 
