@@ -41,6 +41,8 @@
   :diminish company-mode
   :config (global-company-mode))
 
+(use-package flx)
+
 (use-package magit
   :bind ("C-c g" . magit-status)
   :init (setq magit-commit-arguments (quote ("--gpg-sign=76D1E98162B00F5A"))))
