@@ -43,6 +43,13 @@
 
 (use-package flx)
 
+(use-package idle-highlight-mode
+  :diminish idle-highlight-mode
+  :config
+  (add-hook 'prog-mode-hook
+            (lambda ()
+              (idle-highlight-mode t))))
+
 (use-package magit
   :bind ("C-c g" . magit-status)
   :init (setq magit-commit-arguments (quote ("--gpg-sign=76D1E98162B00F5A"))))
