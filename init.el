@@ -47,6 +47,10 @@
 
 (use-package monokai-theme)
 
+(use-package projectile
+  :diminish projectile-mode
+  :config (projectile-global-mode))
+
 (setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
 (load custom-file t)
 
