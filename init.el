@@ -52,6 +52,7 @@
   (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode))
 
 (use-package cider
+  :init (setq cider-repl-display-help-banner nil)
   :config
   (add-hook 'cider-mode-hook 'eldoc-mode)
   (add-hook 'cider-repl-mode-hook 'subword-mode)
