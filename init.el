@@ -73,6 +73,8 @@
   :diminish projectile-mode
   :config (projectile-global-mode))
 
+(use-package smex)
+
 (setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
 (load custom-file t)
 
