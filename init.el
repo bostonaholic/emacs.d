@@ -46,12 +46,14 @@
 (use-package better-defaults)
 
 (use-package clojure-mode
+  :defer t
   :config
   (add-hook 'clojure-mode-hook 'enable-paredit-mode)
   (add-hook 'clojurescript-mode-hook 'enable-paredit-mode)
   (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode))
 
 (use-package cider
+  :defer t
   :config
   (add-hook 'cider-mode-hook 'eldoc-mode)
   (add-hook 'cider-repl-mode-hook 'subword-mode)
@@ -77,12 +79,14 @@
   :init (setq magit-commit-arguments (quote ("--gpg-sign=76D1E98162B00F5A"))))
 
 (use-package markdown-mode
+  :defer t
   :config
   (add-hook 'markdown-mode-hook 'turn-on-orgtbl))
 
 (use-package monokai-theme)
 
 (use-package paredit
+  :defer t
   :diminish paredit-mode
   :config
   (add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
@@ -95,7 +99,8 @@
 
 (use-package smex)
 
-(use-package yaml-mode)
+(use-package yaml-mode
+  :defer t)
 
 (defun sort-words (reverse beg end)
   "Sort words in region alphabetically, in REVERSE if negative.
