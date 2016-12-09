@@ -43,6 +43,8 @@
 
 (use-package flx)
 
+(use-package highlight-parentheses)
+
 (use-package idle-highlight-mode
   :diminish idle-highlight-mode
   :config
