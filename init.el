@@ -25,7 +25,8 @@
       inhibit-startup-screen t
       kill-whole-line t
       linum-format " %i "
-      ring-bell-function 'identity)
+      ring-bell-function 'identity
+      whitespace-style '(face trailing lines-tail tabs))
 
 (global-linum-mode t)
 (winner-mode t)
@@ -37,6 +38,7 @@
             (make-local-variable 'column-number-mode)
             (column-number-mode t)
             (when window-system (hl-line-mode t))))
+(add-hook 'prog-mode-hook 'whitespace-mode)
 
 (use-package ace-jump-mode
   :bind ("C-." . ace-jump-mode))
