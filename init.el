@@ -96,8 +96,6 @@
   :diminish company-mode
   :config (global-company-mode))
 
-(use-package flx)
-
 (use-package highlight-parentheses)
 
 (use-package idle-highlight-mode
