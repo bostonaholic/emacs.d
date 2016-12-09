@@ -75,6 +75,8 @@
 
 (use-package smex)
 
+(use-package yaml-mode)
+
 (setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
 (load custom-file t)
 
