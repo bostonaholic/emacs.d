@@ -51,6 +51,12 @@
   (add-hook 'clojurescript-mode-hook 'enable-paredit-mode)
   (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode))
 
+(use-package cider
+  :config
+  (add-hook 'cider-mode-hook 'eldoc-mode)
+  (add-hook 'cider-repl-mode-hook 'subword-mode)
+  (add-hook 'cider-repl-mode-hook 'paredit-mode))
+
 (use-package company
   :diminish company-mode
   :config (global-company-mode))
