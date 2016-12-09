@@ -21,7 +21,7 @@
 
 (setq large-file-warning-threshold 100000000)
 
-(winner-mode 1)
+(winner-mode t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
