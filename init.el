@@ -56,6 +56,10 @@
   :bind ("C-c g" . magit-status)
   :init (setq magit-commit-arguments (quote ("--gpg-sign=76D1E98162B00F5A"))))
 
+(use-package markdown-mode
+  :config
+  (add-hook 'markdown-mode-hook 'turn-on-orgtbl))
+
 (use-package monokai-theme)
 
 (use-package projectile
