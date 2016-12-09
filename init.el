@@ -32,6 +32,12 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (make-local-variable 'column-number-mode)
+            (column-number-mode t)
+            (when window-system (hl-line-mode t))))
+
 (use-package ace-jump-mode
   :bind ("C-." . ace-jump-mode))
 
