@@ -40,6 +40,40 @@
             (when window-system (hl-line-mode t))))
 (add-hook 'prog-mode-hook 'whitespace-mode)
 
+(use-package msb-mode
+  ;; run before package is loaded
+  :init (setq my-var t)
+
+  ;; run after package is loaded
+  :config (msb-mode 1)
+
+  ;; run before everything except :disabled
+  :preface ((defun i-need-this () ...))
+
+  ;; added to 'auto-mode-alist
+  :mode ("\\.py\\'" . python-mode)
+
+  ;; added to 'interpreter-mode-alist
+  :interpreter ("python" . python-mode)
+
+  ;; define autoloads
+  :commands msb-mode
+
+  ;; keybindings
+  :bind (("C-m" . do-something))
+
+  ;; defer loading of a package, implied with :commands, :bind, :mode, :interpreter
+  :defer t
+
+  ;; defer loading of a package until after named features are loaded
+  :after ()
+
+  ;; prevent deferred loading in all cases
+  :demand nil
+
+  ;; ignore the package completely
+  :disabled t)
+
 (use-package ace-jump-mode
   :bind ("C-." . ace-jump-mode))
 
