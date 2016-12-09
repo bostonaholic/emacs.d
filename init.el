@@ -106,6 +106,22 @@
   (interactive "*P\nr")
   (sort-regexp-fields reverse "\\(\\sw\\|\\s_\\)+" "\\&" beg end))
 
+(progn
+  (global-set-key (kbd "M-j")
+                  (lambda () (interactive)
+                    (join-line -1)))
+
+  (global-set-key (kbd "C-+") 'text-scale-increase)
+  (global-set-key (kbd "C--") 'text-scale-decrease)
+
+  (global-set-key (kbd "M-n") 'scroll-up-line)
+  (global-set-key (kbd "M-p") 'scroll-down-line)
+
+  (global-set-key (kbd "C-S-<up>")    'buf-move-up)
+  (global-set-key (kbd "C-S-<down>")  'buf-move-down)
+  (global-set-key (kbd "C-S-<left>")  'buf-move-left)
+  (global-set-key (kbd "C-S-<right>") 'buf-move-right))
+
 (setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
 (load custom-file t)
 
