@@ -19,14 +19,23 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(setq large-file-warning-threshold 100000000)
+(setq large-file-warning-threshold 100000000
+      fill-column 80
+      global-visual-line-mode t
+      inhibit-startup-screen t
+      kill-whole-line t
+      linum-format " %i "
+      ring-bell-function 'identity)
 
+(global-linum-mode t)
 (winner-mode t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (use-package ace-jump-mode
   :bind ("C-." . ace-jump-mode))
+
+(use-package better-defaults)
 
 (use-package magit
   :bind ("C-c g" . magit-status)
