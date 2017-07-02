@@ -1,1 +1,3 @@
 * emacs.d
+
+`ln -s $PWD ~/.emacs.d`
