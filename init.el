@@ -66,7 +66,7 @@
   :defer t
 
   ;; defer loading of a package until after named features are loaded
-  :after ()
+  :after (python-mode)
 
   ;; prevent deferred loading in all cases
   :demand nil
