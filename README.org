@@ -1,3 +1,5 @@
 * emacs.d
 
-`ln -s $PWD ~/.emacs.d`
+#+BEGIN_SRC shell
+  ln -s $PWD ~/.emacs.d
+#+END_SRC
