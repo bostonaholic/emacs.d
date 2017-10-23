@@ -7,8 +7,6 @@
 
 (require 'package)
 
-(require 'diminish)
-
 (setq package-enable-at-startup nil
       use-package-always-ensure t)
 
@@ -20,6 +18,12 @@
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
+
+;; use-package.el is no longer needed at runtime
+(eval-when-compile
+  (require 'use-package))
+(require 'diminish)
+(require 'bind-key)
 
 (setq large-file-warning-threshold 100000000
       fill-column 80
