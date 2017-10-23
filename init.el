@@ -31,7 +31,8 @@
       inhibit-startup-screen t
       kill-whole-line t
       linum-format " %3i "
-      ring-bell-function 'identity
+      ring-bell-function 'ignore
+      visible-bell nil
       whitespace-style '(face trailing lines-tail tabs))
 
 (global-linum-mode t)
