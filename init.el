@@ -153,6 +153,16 @@
   :diminish projectile-mode
   :config (projectile-global-mode))
 
+(defvar ruby-version-manager 'rbenv)
+
+(use-package rbenv
+  :if (equal ruby-version-manager 'rbenv)
+  :defer t)
+
+(use-package ruby-mode
+  :defer t
+  :mode ("Brewfile\\'" . ruby-mode))
+
 (use-package smex)
 
 (use-package winum
