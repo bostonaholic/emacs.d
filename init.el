@@ -33,6 +33,8 @@
 (global-linum-mode t)
 (winner-mode t)
 
+(set-face-attribute 'default nil :font "Fira Mono for Powerline")
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (add-hook 'prog-mode-hook
