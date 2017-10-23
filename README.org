@@ -1,5 +1,7 @@
 * emacs.d
 
 #+BEGIN_SRC shell
+  git clone git@github.com:bostonaholic/emacs.d.git
+  cd emacs.d
   ln -s $PWD ~/.emacs.d
 #+END_SRC
