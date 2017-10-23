@@ -170,7 +170,14 @@
     (define-key winum-keymap (kbd "M-9") 'winum-select-window-9)
     (winum-mode)))
 
-(use-package yaml-mode)
+(use-package yaml-mode
+  :mode
+  (("\\.\\(yml\\|yaml\\)\\'" . yaml-mode)
+   ("Procfile\\'" . yaml-mode))
+  :config
+  (add-hook 'yaml-mode-hook
+            '(lambda ()
+               (define-key yaml-mode-map "\C-m" 'newline-and-indent))))
 
 (defun sort-words (reverse beg end)
   "Sort words in region alphabetically, in REVERSE if negative.
