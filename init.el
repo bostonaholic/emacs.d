@@ -108,6 +108,14 @@
             (lambda ()
               (idle-highlight-mode t))))
 
+(use-package js2-mode
+  :defer t
+  :mode
+  ("\\.js\\'" . js2-mode))
+
+(use-package json-mode
+  :defer t)
+
 (use-package magit
   :bind ("C-c g" . magit-status)
   :init (setq magit-commit-arguments (quote ("--gpg-sign=76D1E98162B00F5A"))))
