@@ -92,7 +92,14 @@
   (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode))
 
 (use-package cider
-  :init (setq cider-repl-display-help-banner nil)
+  :defer t
+  :init
+  (setq cider-stacktrace-default-filters '(tooling dup)
+        cider-repl-pop-to-buffer-on-connect nil
+        cider-prompt-save-file-on-load nil
+        cider-repl-use-clojure-font-lock t
+        cider-repl-display-help-banner nil)
+  (add-hook 'clojure-mode-hook 'cider-mode)
   :config
   (add-hook 'cider-mode-hook 'eldoc-mode)
   (add-hook 'cider-repl-mode-hook 'subword-mode)
