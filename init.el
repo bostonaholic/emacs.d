@@ -3,7 +3,7 @@
 (setq user-full-name "Matthew Boston"
       user-mail-address "matthew@matthewboston.com")
 
-(setq gc-cons-threshold 50000000)
+(setq gc-cons-threshold 100000000)
 
 (require 'package)
 
