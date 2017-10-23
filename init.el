@@ -115,7 +115,6 @@
 (use-package highlight-parentheses)
 
 (use-package idle-highlight-mode
-  :diminish idle-highlight-mode
   :config
   (add-hook 'prog-mode-hook
             (lambda ()
