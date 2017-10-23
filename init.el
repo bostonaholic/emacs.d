@@ -7,6 +7,8 @@
 
 (require 'package)
 
+(require 'diminish)
+
 (setq package-enable-at-startup nil
       use-package-always-ensure t)
 
