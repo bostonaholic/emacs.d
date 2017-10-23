@@ -96,6 +96,9 @@
   :diminish company-mode
   :config (global-company-mode))
 
+(use-package coffee-mode
+  :defer t)
+
 (use-package highlight-parentheses)
 
 (use-package idle-highlight-mode
