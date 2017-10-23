@@ -80,6 +80,12 @@
 (use-package better-defaults)
 
 (use-package clojure-mode
+  :defer t
+  :mode
+  ("\\.boot\\'" . clojure-mode)
+  :init
+  ;; This regexp matches shebang expressions like `#!/usr/bin/env boot'
+  (add-to-list 'magic-mode-alist '("#!.*boot\\s-*$" . clojure-mode))
   :config
   (add-hook 'clojure-mode-hook 'enable-paredit-mode)
   (add-hook 'clojurescript-mode-hook 'enable-paredit-mode)
