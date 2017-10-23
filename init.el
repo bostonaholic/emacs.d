@@ -114,6 +114,8 @@
 (use-package coffee-mode
   :defer t)
 
+(use-package delight)
+
 (use-package highlight-parentheses)
 
 (use-package idle-highlight-mode
