@@ -185,7 +185,8 @@
         neo-show-hidden-files t
         neo-auto-indent-point t
         neo-modern-sidebar t
-        neo-vc-integration nil))
+        neo-vc-integration nil)
+  :bind ("C-c n" . neotree-toggle))
 
 (use-package org
   :defer t
