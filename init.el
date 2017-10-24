@@ -191,10 +191,15 @@
 (use-package ruby-mode
   :defer t
   :mode ("Brewfile\\'" . ruby-mode))
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 (use-package smex
   :defer t
   :init
-  (setq-default smex-history-length 32))
+  (setq-default smex-history-length 32)
+  :bind
+  (("M-x" . smex)
+   ("M-X" . smex-major-mode-commands)))
 
 (use-package undo-tree
   :diminish undo-tree-mode
