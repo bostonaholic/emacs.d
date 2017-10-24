@@ -191,6 +191,14 @@
 (use-package ruby-mode
   :defer t
   :mode ("Brewfile\\'" . ruby-mode))
+(use-package undo-tree
+  :diminish undo-tree-mode
+  :init
+  (global-undo-tree-mode)
+  (setq undo-tree-visualizer-timestamps t)
+  (setq undo-tree-visualizer-diff t))
+
+(use-package uuidgen)
 
 (use-package smex)
 (use-package whitespace
