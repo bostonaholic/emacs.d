@@ -138,8 +138,11 @@
 
 (use-package js2-mode
   :defer t
+  :delight js2-jsx-mode "JSX"
   :mode
-  ("\\.js\\'" . js2-mode))
+  ("\\.jsx?\\'" . js2-jsx-mode)
+  :interpreter
+  ("node" . js2-jsx-mode))
 
 (use-package json-mode
   :defer t)
