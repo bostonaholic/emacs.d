@@ -32,6 +32,7 @@
       kill-whole-line t
       linum-format " %3i "
       ring-bell-function 'ignore
+      vc-follow-symlinks t
       visible-bell nil
       whitespace-style '(face trailing lines-tail tabs))
 
