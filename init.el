@@ -97,8 +97,7 @@
 
 (use-package clojure-mode
   :defer t
-  :mode
-  ("\\.boot\\'" . clojure-mode)
+  :mode "\\.boot\\'"
   :init
   ;; This regexp matches shebang expressions like `#!/usr/bin/env boot'
   (add-to-list 'magic-mode-alist '("#!.*boot\\s-*$" . clojure-mode))
@@ -198,8 +197,8 @@
 
 (use-package ruby-mode
   :defer t
-  :mode ("Brewfile\\'" . ruby-mode)
-  :interpreter ("ruby" . ruby-mode))
+  :mode "Brewfile\\'"
+  :interpreter "ruby")
 
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
@@ -250,9 +249,7 @@
     (winum-mode)))
 
 (use-package yaml-mode
-  :mode
-  (("\\.\\(yml\\|yaml\\)\\'" . yaml-mode)
-   ("Procfile\\'" . yaml-mode))
+  :mode ("\\.ya?ml\\'" "Procfile\\'")
   :config
   (add-hook 'yaml-mode-hook
             '(lambda ()
