@@ -59,15 +59,20 @@
   :preface ((defun i-need-this () ...))
 
   ;; added to 'auto-mode-alist
+  ;; infers :defer
+  :mode "\\.rb\\'" ;; OR
   :mode ("\\.py\\'" . python-mode)
 
   ;; added to 'interpreter-mode-alist
+  ;; infers :defer
+  :interpreter "ruby" ;; OR
   :interpreter ("python" . python-mode)
 
   ;; define autoloads
   :commands msb-mode
 
   ;; keybindings
+  ;; infers :defer
   :bind (("C-m" . do-something))
 
   ;; defer loading of a package, implied with :commands, :bind, :mode, :interpreter
