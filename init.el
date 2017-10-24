@@ -164,6 +164,12 @@
 
 (use-package monokai-theme)
 
+(use-package mwim
+  :defer t
+  :init
+  (global-set-key (kbd "C-a") 'mwim-beginning-of-code-or-line)
+  (global-set-key (kbd "C-e") 'mwim-end-of-code-or-line))
+
 (use-package neotree
   :defer t
   :commands neo-global--window-exists-p
@@ -180,6 +186,10 @@
         neo-auto-indent-point t
         neo-modern-sidebar t
         neo-vc-integration nil))
+
+(use-package org
+  :defer t
+  :commands (orgtbl-mode))
 
 (use-package paredit
   :diminish paredit-mode
