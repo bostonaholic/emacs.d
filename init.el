@@ -147,7 +147,8 @@
   :interpreter ("node" . js2-jsx-mode))
 
 (use-package json-mode
-  :defer t)
+  :defer t
+  :mode "\\.jshintrc\\'")
 
 (use-package magit
   :bind ("C-c g" . magit-status)
