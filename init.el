@@ -97,7 +97,7 @@
 
 (use-package clojure-mode
   :defer t
-  :mode "\\.boot\\'"
+  :mode ("\\.boot\\'" "\\.edn\\'")
   :init
   ;; This regexp matches shebang expressions like `#!/usr/bin/env boot'
   (add-to-list 'magic-mode-alist '("#!.*boot\\s-*$" . clojure-mode))
@@ -128,6 +128,9 @@
   :defer t)
 
 (use-package delight)
+
+(use-package dockerfile-mode
+  :defer t)
 
 (use-package hi-lock
   :diminish hi-lock-mode)
