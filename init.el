@@ -193,7 +193,9 @@
 
 (use-package ruby-mode
   :defer t
-  :mode ("Brewfile\\'" . ruby-mode))
+  :mode ("Brewfile\\'" . ruby-mode)
+  :interpreter ("ruby" . ruby-mode))
+
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 (use-package smex
