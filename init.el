@@ -47,7 +47,6 @@
             (make-local-variable 'column-number-mode)
             (column-number-mode t)
             (when window-system (hl-line-mode t))))
-(add-hook 'prog-mode-hook 'whitespace-mode)
 
 (use-package msb-mode
   ;; run before package is loaded
@@ -195,7 +194,9 @@
 
 (use-package smex)
 (use-package whitespace
-  :diminish whitespace-mode)
+  :diminish whitespace-mode
+  :config
+  (add-hook 'prog-mode-hook 'whitespace-mode))
 
 (use-package winum
   :config
