@@ -86,6 +86,9 @@
 (use-package ace-jump-mode
   :bind ("C-." . ace-jump-mode))
 
+(use-package autorevert
+  :diminish auto-revert-mode)
+
 (use-package better-defaults)
 
 (use-package clojure-mode
@@ -122,6 +125,9 @@
   :defer t)
 
 (use-package delight)
+
+(use-package hi-lock
+  :diminish hi-lock-mode)
 
 (use-package highlight-parentheses)
 
@@ -188,6 +194,8 @@
   :mode ("Brewfile\\'" . ruby-mode))
 
 (use-package smex)
+(use-package whitespace
+  :diminish whitespace-mode)
 
 (use-package winum
   :config
