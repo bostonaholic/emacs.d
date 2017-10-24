@@ -149,6 +149,23 @@
 
 (use-package monokai-theme)
 
+(use-package neotree
+  :defer t
+  :commands neo-global--window-exists-p
+  :init
+  (setq neo-window-width 32
+        neo-create-file-auto-open t
+        neo-banner-message "Press ? for neotree help"
+        neo-show-updir-line nil
+        neo-mode-line-type 'neotree
+        neo-smart-open t
+        neo-dont-be-alone t
+        neo-persist-show nil
+        neo-show-hidden-files t
+        neo-auto-indent-point t
+        neo-modern-sidebar t
+        neo-vc-integration nil))
+
 (use-package paredit
   :diminish paredit-mode
   :config
@@ -174,9 +191,14 @@
 
 (use-package winum
   :config
-  (setq winum-auto-assign-0-to-minibuffer nil
+  (setq winum-assign-func 'msb//winum-assign-func
+        winum-auto-assign-0-to-minibuffer nil
         winum-auto-setup-mode-line nil
         winum-ignored-buffers '(" *which-key*"))
+  (defun msb//winum-assign-func ()
+    "Custom number assignment for neotree."
+    (when (string-match-p (buffer-name) ".*\\*NeoTree\\*.*")
+      0))
   (progn
     (define-key winum-keymap (kbd "M-0") 'winum-select-window-0-or-10)
     (define-key winum-keymap (kbd "M-1") 'winum-select-window-1)
