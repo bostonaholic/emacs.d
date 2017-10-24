@@ -191,6 +191,11 @@
 (use-package ruby-mode
   :defer t
   :mode ("Brewfile\\'" . ruby-mode))
+(use-package smex
+  :defer t
+  :init
+  (setq-default smex-history-length 32))
+
 (use-package undo-tree
   :diminish undo-tree-mode
   :init
@@ -200,7 +205,6 @@
 
 (use-package uuidgen)
 
-(use-package smex)
 (use-package whitespace
   :diminish whitespace-mode
   :config
