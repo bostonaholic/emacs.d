@@ -203,7 +203,8 @@
   (setq winum-assign-func 'msb//winum-assign-func
         winum-auto-assign-0-to-minibuffer nil
         winum-auto-setup-mode-line nil
-        winum-ignored-buffers '(" *which-key*"))
+        winum-ignored-buffers '(" *which-key*")
+        winum-scope 'frame-local)
   (defun msb//winum-assign-func ()
     "Custom number assignment for neotree."
     (when (string-match-p (buffer-name) ".*\\*NeoTree\\*.*")
