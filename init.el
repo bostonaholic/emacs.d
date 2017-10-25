@@ -221,7 +221,7 @@
 (use-package smex
   :defer t
   :init
-  (setq-default smex-history-length 32)
+  (setq smex-history-length 32)
   :bind
   (("M-x" . smex)
    ("M-X" . smex-major-mode-commands)))
