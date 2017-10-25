@@ -570,6 +570,9 @@ Search for a search tool in the order provided by `search-tools'."
   (("M-x" . smex)
    ("M-X" . smex-major-mode-commands)))
 
+(use-package tern
+  :init (add-hook 'js-mode-hook #'tern-mode))
+
 (use-package undo-tree
   :diminish undo-tree-mode
   :init
