@@ -228,8 +228,8 @@
   :diminish undo-tree-mode
   :init
   (global-undo-tree-mode)
-  (setq undo-tree-visualizer-timestamps t)
-  (setq undo-tree-visualizer-diff t))
+  (setq undo-tree-visualizer-timestamps t
+        undo-tree-visualizer-diff t))
 
 (use-package uuidgen)
 
