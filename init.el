@@ -200,6 +200,7 @@ Removes the automatic guessing of the initial value based on thing at point. "
 
 (use-package helm-ag
   :defer t
+  :after helm
   :init
   (defvar search-tools '("ag" "pt" "ack" "grep"))
   (progn
@@ -458,6 +459,7 @@ Search for a search tool in the order provided by `search-tools'."
 
 (use-package helm-projectile
   :defer t
+  :after helm
   :commands (helm-projectile-switch-to-buffer
              helm-projectile-find-dir
              helm-projectile-dired-find-dir
