@@ -486,7 +486,8 @@ Search for a search tool in the order provided by `search-tools'."
   :config
   (add-hook 'markdown-mode-hook 'turn-on-orgtbl))
 
-(use-package monokai-theme)
+(use-package monokai-theme
+  :demand t)
 
 (use-package mwim
   :defer t
