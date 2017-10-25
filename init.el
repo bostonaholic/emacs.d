@@ -49,6 +49,8 @@
             (column-number-mode t)
             (when window-system (hl-line-mode t))))
 
+(add-hook 'focus-out-hook #'garbage-collect)
+
 (use-package msb-mode
   ;; run before package is loaded
   :init (setq my-var t)
