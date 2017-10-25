@@ -1,7 +1,11 @@
 ;;; init.el
 
-(setq user-full-name "Matthew Boston"
-      user-mail-address "matthew@matthewboston.com")
+(let ((secret.el (expand-file-name ".secret.el" user-emacs-directory)))
+  (when (file-exists-p secret.el)
+    (load secret.el)))
+
+(setq user-full-name my/user-full-name
+      user-mail-address my/user-mail-address)
 
 (setq gc-cons-threshold 100000000)
 
@@ -470,7 +474,7 @@ Search for a search tool in the order provided by `search-tools'."
 
 (use-package magit
   :bind ("C-c g" . magit-status)
-  :init (setq magit-commit-arguments (quote ("--gpg-sign=76D1E98162B00F5A"))))
+  :init (setq magit-commit-arguments (quote (concat "--gpg-sign=" my/gpg-signing-key))))
 
 (use-package markdown-mode
   :config
