@@ -144,6 +144,19 @@
 
 (use-package dockerfile-mode
   :defer t)
+(use-package css-mode
+  :ensure nil
+  :config (setq-default css-indent-offset 2))
+
+(use-package scss-mode
+  :ensure nil
+  :preface
+  (defun msb/scss-set-comment-style ()
+    (setq-local comment-end "")
+    (setq-local comment-start "//"))
+  :delight scss-mode "SCSS"
+  :mode ("\\.css\\'" "\\.sass\\'" "\\.scss\\'")
+  :init (add-hook 'scss-mode-hook #'msb/scss-set-comment-style))
 
 (use-package helm
   :defer 1
