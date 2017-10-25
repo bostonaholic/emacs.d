@@ -475,6 +475,14 @@ Search for a search tool in the order provided by `search-tools'."
 
 (use-package highlight-parentheses)
 
+(use-package sgml-mode
+  :ensure nil
+  :delight html-mode "HTML"
+  :init
+  (add-hook 'html-mode-hook #'sgml-electric-tag-pair-mode)
+  (add-hook 'html-mode-hook #'sgml-name-8bit-mode)
+  :config (setq-default sgml-basic-offset 2))
+
 (use-package idle-highlight-mode
   :config
   (add-hook 'prog-mode-hook
