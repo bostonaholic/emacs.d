@@ -1,5 +1,9 @@
 ;;; init.el
 
+(setq-default custom-file (expand-file-name ".custom.el" user-emacs-directory))
+(when (file-exists-p custom-file)
+  (load custom-file))
+
 (let ((secret.el (expand-file-name ".secret.el" user-emacs-directory)))
   (when (file-exists-p secret.el)
     (load secret.el)))
@@ -617,9 +621,5 @@ Search for a search tool in the order provided by `search-tools'."
   (global-set-key (kbd "C-S-<down>")  'buf-move-down)
   (global-set-key (kbd "C-S-<left>")  'buf-move-left)
   (global-set-key (kbd "C-S-<right>") 'buf-move-right))
-
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-(when (file-exists-p custom-file)
-  (load custom-file))
 
 ;;; init.el
