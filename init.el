@@ -302,7 +302,8 @@
   (global-set-key (kbd "C-S-<left>")  'buf-move-left)
   (global-set-key (kbd "C-S-<right>") 'buf-move-right))
 
-(setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
-(load custom-file t)
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(when (file-exists-p custom-file)
+  (load custom-file))
 
 ;;; init.el
