@@ -503,7 +503,7 @@ Search for a search tool in the order provided by `search-tools'."
 
 (use-package magit
   :bind ("C-c g" . magit-status)
-  :init (setq magit-commit-arguments (quote (concat "--gpg-sign=" my/gpg-signing-key))))
+  :init (setq magit-commit-arguments (list (concat "--gpg-sign=" my/gpg-signing-key))))
 
 (use-package markdown-mode
   :config
